@@ -1,0 +1,40 @@
+body {
+    font-family: 'Malgun Gothic', sans-serif;
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+}
+h1 { color: #007bff; margin-bottom: 10px; }
+.input-group { margin-bottom: 15px; text-align: left; }
+label { display: block; margin-bottom: 5px; font-weight: bold; }
+input[type="number"], #creditHours { 
+    width: 100%; padding: 10px; border: 1px solid #ced4da; border-radius: 5px; box-sizing: border-box; 
+}
+button {
+    width: 100%; padding: 12px; background-color: #28a745; color: white; border: none; border-radius: 5px; 
+    font-size: 1.1em; cursor: pointer; margin-top: 10px; transition: background-color 0.3s;
+}
+button:hover { background-color: #218838; }
+#result-box { margin-top: 30px; padding: 20px; border-radius: 8px; border: 1px solid #ccc; }
+#result-status { font-size: 1.3em; font-weight: bold; padding: 10px; border-radius: 5px; }
+.display-value {
+    display: block; padding: 10px; border: 1px solid #ced4da; border-radius: 5px; background-color: #f8f9fa; 
+    font-weight: bold; color: #007bff;
+}
+/* 상태별 색상 */
+.status-default { background-color: #f8f9fa; color: #6c757d; }
+.status-safe { background-color: #d4edda; color: #155724; }
+.status-warning { background-color: #fff3cd; color: #856404; }
+.status-fail { background-color: #f8d7da; color: #721c24; }
