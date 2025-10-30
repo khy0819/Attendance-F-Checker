@@ -49,7 +49,7 @@ function calculateAttendance() {
         // 출석 미달 F 확정
         statusText = "❌ F 학점 (출석 미달) 확정!";
         statusClass = 'status-fail';
-        detailText = `누적 결석 시간(${absentHours}시간)이 **최대 허용 시간(${maxAllowedAbsence.toFixed(2)}시간)**을 초과했습니다.`;
+        detailText = `누적 결석 시간(${absentHours}시간)이 최대 허용 시간(${maxAllowedAbsence.toFixed(2)}시간)을 초과했습니다.`;
     } else {
         // 아직 F가 아님
         const remainingAbsenceBudget = maxAllowedAbsence - absentHours;
