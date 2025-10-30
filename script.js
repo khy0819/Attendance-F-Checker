@@ -64,8 +64,8 @@ function calculateAttendance() {
         }
 
         detailText = `
-            최대 허용 결석 시간: **${maxAllowedAbsence.toFixed(2)}시간**<br>
-            남은 결석 허용 시간: **${remainingAbsenceBudget.toFixed(2)}시간**<br>
+            최대 허용 결석 시간: ${maxAllowedAbsence.toFixed(2)}시간<br>
+            남은 결석 허용 시간: ${remainingAbsenceBudget.toFixed(2)}시간<br>
             최소 출석 요구 시간: ${minRequiredAttendance.toFixed(2)}시간
         `;
     }
